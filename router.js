@@ -12,13 +12,13 @@ router.get("/home", function(req,res) {
     res.sendFile(path.join(__dirname + "/views/index.html"))
 });
 router.get("/images/1", function(req,res) {
-    res.sendFile(path.join(__dirname + "/public/images/book1.jpg"))
+    res.sendFile(path.join(__dirname + "/views/book1.html"))
 });
 router.get("/images/2", function(req,res) {
-    res.sendFile(path.join(__dirname + "/public/images/book2.jpg"))
+    res.sendFile(path.join(__dirname + "/views/book2.html"))
 });
 router.get("/images/3", function(req,res) {
-    res.sendFile(path.join(__dirname + "/public/images/book3.jpg"))
+    res.sendFile(path.join(__dirname + "/views/book3.html"))
 });
 
 module.exports = router;
